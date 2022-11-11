@@ -20,12 +20,12 @@ const Header = () => {
         <div className="mt-[3vh]">
           <input
             type="text"
-            className="w-[40%] px-6 py-4 rounded-md bg-red-700 placeholder:text-white placeholder:text-[17px] placeholder:font-semibold"
+            className="w-[40%] px-6 py-4 rounded-md bg-red-700 placeholder:text-white placeholder:text-[17px] placeholder:font-semibold font-semibold text-white"
             placeholder="Type Place, City.Division"
           />
           <input
             type="text"
-            className="w-[40%] mx-4 px-6 py-4 rounded-md bg-red-700 placeholder:text-white placeholder:text-[17px]  placeholder:font-semibold"
+            className="w-[40%] mx-4 px-6 py-4 rounded-md bg-red-700 placeholder:text-white placeholder:text-[17px]  placeholder:font-semibold font-semibold text-white"
             placeholder="Restaurant"
           />
           <input

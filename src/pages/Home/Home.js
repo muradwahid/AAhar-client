@@ -1,12 +1,14 @@
 import React from 'react';
-import ServiceCategory from '../ServiceCategory';
+import { useLoaderData } from 'react-router-dom';
+import Service from '../Service';
 import Header from './Header';
 
 const Home = () => {
+  const foods = useLoaderData()
     return (
       <>
         <Header />
-        <ServiceCategory />
+        <Service foods={foods} />
       </>
     );
 };
