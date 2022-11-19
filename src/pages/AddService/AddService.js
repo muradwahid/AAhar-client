@@ -20,7 +20,7 @@ const AddService = () => {
           strMealThumb: img,
           strInstructions:description,
         };
-            fetch("http://localhost:5000/services", {
+            fetch("https://assignment11-server-five.vercel.app/services", {
               method: "POST",
               headers: {
                 "content-type": "application/json",

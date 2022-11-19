@@ -35,7 +35,7 @@ const ServiceReview = () => {
       strMealThumb,
       strMeal,
     });
-    fetch("http://localhost:5000/review", {
+    fetch("https://assignment11-server-five.vercel.app/review", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -51,7 +51,7 @@ const ServiceReview = () => {
       .catch((err) => console.log(err));
   };
   useEffect(() => {
-    fetch("http://localhost:5000/review")
+    fetch("https://assignment11-server-five.vercel.app/review")
       .then((res) => res.json())
       .then((data) => {
         const foodReviews = data.filter(rv => rv.ratingId === _id);
