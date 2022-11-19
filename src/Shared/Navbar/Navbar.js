@@ -31,10 +31,17 @@ const Navbar = () => {
             <NavLink className="hover:text-red-400" to="/">
               Home
             </NavLink>
-            <NavLink className="hover:text-red-400" to="/myreview">
-              My Review
-            </NavLink>
-            <NavLink className="hover:text-red-400" to="/addservice">Add Service</NavLink>
+            {user?.uid ? (
+              <>
+                <NavLink className="hover:text-red-400" to="/myreview">
+                  My Review
+                </NavLink>{" "}
+                <NavLink className="hover:text-red-400" to="/addservice">
+                  Add Service
+                </NavLink>
+              </>
+            ) : null}
+
             <NavLink className="hover:text-red-400" to="/blog">
               Blog
             </NavLink>
