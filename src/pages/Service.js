@@ -16,13 +16,16 @@ const Service = ({foods}) => {
           <h2 className="text-4xl text-gray-700 font-semibold text-center mb-3">
             Services
           </h2>
-          <div className="flex gap-6">
+          <div className="flex justify-between gap-6">
             {foods.slice(0, 3).map((food) => (
               <FoodsService key={food._id} food={food} />
             ))}
           </div>
           <div className="text-center my-12">
-            <Link to="/allfoods" className="text-white bg-red-700 py-2 px-7 rounded-md font-semibold">
+            <Link
+              to="/services"
+              className="text-white bg-red-700 py-2 px-7 rounded-md font-semibold"
+            >
               Show All
             </Link>
           </div>
