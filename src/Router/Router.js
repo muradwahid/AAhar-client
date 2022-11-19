@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main/Main";
 import AddService from "../pages/AddService/AddService";
 import AllFoods from "../pages/AllFoods/AllFoods";
+import Blog from "../pages/Blog/Blog";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import MyReviews from "../pages/MyReviews/MyReviews";
@@ -34,7 +35,7 @@ export const router = createBrowserRouter([
             <AddService />
           </PrivetRoute>
         ),
-      },{path:"/blog",element:},
+      },{path:"/blog",element:<Blog/>},
       {
         path: "/login",
         element: <Login />,
