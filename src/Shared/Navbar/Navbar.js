@@ -49,7 +49,7 @@ const Navbar = () => {
                     <img
                       onClick={() => setToggle(!toggle)}
                       className="rounded-full h-10 w-10"
-                      src={user.photoURL}
+                      src={user?.photoURL}
                       alt=""
                     />
                   ) : (
