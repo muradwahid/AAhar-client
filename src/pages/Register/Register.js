@@ -1,10 +1,12 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 const Register = () => {
     const { createUser, updateUserProfile } = useContext(AuthContext);
-     const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
+  useTitle("Register")
     const handleCreateUser = (e) => {
             e.preventDefault();
             console.log("object");

@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { AiFillGithub, AiFillGoogleCircle } from "react-icons/ai";
+import { AiFillGoogleCircle } from "react-icons/ai";
 import { AuthContext } from '../../Contexts/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
 import toast from 'react-hot-toast';
+import useTitle from '../../hooks/useTitle';
 const Login = () => {
+  useTitle("Login")
   const { logIn, popupSignIn } = useContext(AuthContext);
   const googleProvider = new GoogleAuthProvider();
     const location = useLocation();
