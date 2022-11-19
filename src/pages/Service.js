@@ -16,7 +16,7 @@ const Service = ({foods}) => {
           <h2 className="text-4xl text-gray-700 font-semibold text-center mb-3">
             Services
           </h2>
-          <div className="flex justify-between gap-6">
+          <div className="md:flex md:justify-between gap-6">
             {foods.slice(0, 3).map((food) => (
               <FoodsService key={food._id} food={food} />
             ))}

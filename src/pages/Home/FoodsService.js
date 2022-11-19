@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const FoodsService = ({food}) => {
     const { _id, strMeal, strMealThumb, strInstructions, price } = food;
     return (
-      <div className="shadow-md rounded-xl bg-white p-4">
+      <div className="shadow-md rounded-xl bg-white p-4 mb-8">
         <img className="rounded-xl" src={strMealThumb} alt="" />
         <h4 className="text-xl font-semibold text-gray-700 my-3">{strMeal}</h4>
         <p>{strInstructions.slice(0, 100)}...</p>

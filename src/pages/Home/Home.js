@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Service from '../Service';
 import Header from './Header';
+import HowItWork from './HowItWork';
 
 const Home = () => {
   const foods = useLoaderData()
@@ -9,6 +10,7 @@ const Home = () => {
       <>
         <Header />
         <Service foods={foods} />
+        <HowItWork/>
       </>
     );
 };
