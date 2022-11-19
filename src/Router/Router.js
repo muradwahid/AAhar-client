@@ -34,7 +34,7 @@ export const router = createBrowserRouter([
             <AddService />
           </PrivetRoute>
         ),
-      },
+      },{path:"/blog"},
       {
         path: "/login",
         element: <Login />,
